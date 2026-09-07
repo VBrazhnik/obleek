@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vbrazhnik.github.io/obleek/sitemap.xml
