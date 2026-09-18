@@ -143,6 +143,9 @@ a { color: inherit; }
   background: var(--accent-strong);
   color: #121212;
 }
+.btn-primary[href*="play.google.com"] {
+  border-radius: 10px;
+}
 .btn-primary:hover { background: #fff; }
 .btn-primary svg,
 .btn-primary i { width: 18px; height: 18px; font-size: 18px; flex: 0 0 auto; }

@@ -92,6 +92,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+
+.capture-dot {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #d03b3b;
+    border: 1.5px solid var(--paper);
   }
 
 .tabbar {
