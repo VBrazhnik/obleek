@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>obleek — Expense Tracker</title>
-<meta name="description" content="obleek is a budget tracker for Android. Track income, expenses, cards, cash and debts, organize categories your way, and get insights. It's that simple." />
+<title>obleek — expense tracker that detects your payments</title>
+<meta name="description" content="obleek turns your bank’s payment notifications into transactions: tap to confirm, instead of typing. Expenses, income, transfers, debts — your whole budget in one app." />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#121212" />
 <link rel="canonical" href="https://vbrazhnik.github.io/obleek/" />
@@ -30,16 +30,16 @@
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="obleek" />
-<meta property="og:title" content="obleek — Expense Tracker" />
-<meta property="og:description" content="Track income, expenses, cards, cash and debts. Organize categories your way. Get insights. It's that simple." />
+<meta property="og:title" content="obleek — expense tracker that detects your payments" />
+<meta property="og:description" content="obleek turns your bank’s payment notifications into transactions: tap to confirm, instead of typing." />
 <meta property="og:url" content="https://vbrazhnik.github.io/obleek/" />
 <meta property="og:image" content="https://vbrazhnik.github.io/obleek/assets/img/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="obleek — Expense Tracker" />
-<meta name="twitter:description" content="Track income, expenses, cards, cash and debts. It's that simple." />
+<meta name="twitter:title" content="obleek — expense tracker that detects your payments" />
+<meta name="twitter:description" content="Detects payments from your bank notifications. Budget, debts, 160+ currencies." />
 <meta name="twitter:image" content="https://vbrazhnik.github.io/obleek/assets/img/og-image.png" />
 
 <script type="application/ld+json">
@@ -49,7 +49,7 @@
   "name": "obleek",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Android",
-  "description": "A budget tracker for Android: track income, expenses, transfers and debts across cash, cards, and accounts, organize your own categories, and see insights.",
+  "description": "obleek turns your bank’s payment notifications into transactions: tap to confirm, instead of typing. Expenses, income, transfers, debts — your whole budget in one app. The feed groups entries by day, and each account’s ledger shows the running balance after every entry.",
   "url": "https://vbrazhnik.github.io/obleek/",
   "installUrl": "https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek"
 }
@@ -80,8 +80,9 @@
   <section class="hero" id="top">
     <div class="wrap">
       <div class="hero-copy">
-        <h1>Track your money. Get insights. It's that simple.</h1>
-        <p class="lede">obleek is a budget tracker for Android — income, expenses, transfers and debts across cash, cards and accounts, all in one app.</p>
+        <img class="hero-mascot" src="assets/img/mascot-coin.svg" alt="" width="1446" height="2221" />
+        <h1>Track expenses without typing.</h1>
+        <p class="lede">obleek turns your bank’s payment notifications into transactions: tap to confirm, instead of typing.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek" rel="noopener">
             <i class="fa-brands fa-google-play" aria-hidden="true"></i>
@@ -91,6 +92,18 @@
       </div>
 
       <div class="hero-visual">
+        <div class="hero-stage">
+        <div class="hero-phone">
+        <div class="notif hero-notif">
+          <div class="notif-head">
+            <span class="notif-icon" aria-hidden="true"><svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 114C351.545 114 429 214.792 429 293.477C429 372.161 351.545 398.941 256 398.941C160.455 398.941 83.0002 372.161 83 293.477C83 214.792 160.455 114 256 114ZM193.09 215.765C171.12 215.765 153.309 238.545 153.309 266.646C153.309 294.748 171.12 317.529 193.09 317.529C215.06 317.529 232.87 294.748 232.87 266.646C232.87 238.545 215.06 215.765 193.09 215.765ZM320.758 215.765C298.788 215.765 280.978 238.545 280.978 266.646C280.978 294.748 298.788 317.529 320.758 317.529C342.728 317.529 360.539 294.748 360.539 266.646C360.539 238.545 342.728 215.765 320.758 215.765Z"/></svg></span>
+            <span class="notif-app">obleek</span>
+            <span class="notif-sep" aria-hidden="true">&#183;</span>
+            <span class="notif-time">now</span>
+          </div>
+          <p class="notif-title">New transaction detected</p>
+          <p class="notif-body">4.60 USD — McDonald’s — tap to confirm</p>
+        </div>
         <div class="phone-frame">
         <div class="phone" aria-hidden="true">
           <div class="phone-inner">
@@ -111,7 +124,7 @@
                 <div class="tx-list">
                   <div class="tx-row">
                     <span class="tx-icon"><i class="fa-solid fa-utensils"></i></span>
-                    <div class="tx-mid"><div class="name">Food &amp; drink</div><div class="tx-detail"><i class="fa-solid fa-credit-card"></i>Cash wallet · USD</div><div class="tx-detail"><i class="fa-solid fa-location-dot"></i>McDonald's</div><div class="tx-detail tx-note"><i class="fa-solid fa-message"></i><span>Lunch with team</span></div></div>
+                    <div class="tx-mid"><div class="name">Food &amp; drink</div><div class="tx-detail"><i class="fa-solid fa-credit-card"></i>Main card · USD</div><div class="tx-detail"><i class="fa-solid fa-location-dot"></i>McDonald's</div><div class="tx-detail tx-note"><i class="fa-solid fa-message"></i><span>Lunch with team</span></div></div>
                     <div class="tx-amt-wrap"><div class="tx-amt tabular">−$4.60</div><div class="tx-time">12:32 PM</div></div>
                   </div>
                   <div class="tx-row">
@@ -173,6 +186,108 @@
           </div>
         </div>
         </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow" id="detection">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Automatic transaction detection.</h2>
+        <p>Turn on transaction detection and pick which banking apps obleek may watch. It picks out the amount, currency, merchant, and the last four digits of the card. You get a notification, tap it, check the details, and save.</p>
+      </div>
+      <p class="flow-note"><i class="fa-solid fa-building-columns" aria-hidden="true"></i>obleek ships with the notification formats of 80+ banking and payment apps.</p>
+
+      <div class="flow-grid">
+        <ol class="flow-steps">
+          <li class="flow-step">
+            <div class="flow-step-head">
+              <span class="flow-step-num" aria-hidden="true">1</span>
+              <span class="flow-step-label">Your bank notifies you</span>
+            </div>
+            <div class="notif">
+              <div class="notif-head">
+                <span class="notif-icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></span>
+                <span class="notif-app">Your Bank</span>
+                <span class="notif-sep" aria-hidden="true">&#183;</span>
+                <span class="notif-time">now</span>
+              </div>
+              <p class="notif-title">McDonald’s</p>
+              <p class="notif-body tabular">USD4.60 with card ••1234</p>
+            </div>
+          </li>
+
+          <li class="flow-step">
+            <div class="flow-step-head">
+              <span class="flow-step-num" aria-hidden="true">2</span>
+              <span class="flow-step-label">obleek detects the payment</span>
+            </div>
+            <div class="notif">
+              <div class="notif-head">
+                <span class="notif-icon" aria-hidden="true"><svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 114C351.545 114 429 214.792 429 293.477C429 372.161 351.545 398.941 256 398.941C160.455 398.941 83.0002 372.161 83 293.477C83 214.792 160.455 114 256 114ZM193.09 215.765C171.12 215.765 153.309 238.545 153.309 266.646C153.309 294.748 171.12 317.529 193.09 317.529C215.06 317.529 232.87 294.748 232.87 266.646C232.87 238.545 215.06 215.765 193.09 215.765ZM320.758 215.765C298.788 215.765 280.978 238.545 280.978 266.646C280.978 294.748 298.788 317.529 320.758 317.529C342.728 317.529 360.539 294.748 360.539 266.646C360.539 238.545 342.728 215.765 320.758 215.765Z"/></svg></span>
+                <span class="notif-app">obleek</span>
+                <span class="notif-sep" aria-hidden="true">&#183;</span>
+                <span class="notif-time">now</span>
+              </div>
+              <p class="notif-title">New transaction detected</p>
+              <p class="notif-body">4.60 USD — McDonald’s — tap to confirm</p>
+            </div>
+          </li>
+
+          <li class="flow-step">
+            <div class="flow-step-head">
+              <span class="flow-step-num" aria-hidden="true">3</span>
+              <span class="flow-step-label">Transaction added once you confirm</span>
+            </div>
+            <div class="tx-card">
+              <div class="tx-row">
+                <span class="tx-icon" aria-hidden="true"><i class="fa-solid fa-utensils"></i></span>
+                <div class="tx-mid">
+                  <div class="name">Food &amp; drink</div>
+                  <div class="tx-detail"><i class="fa-solid fa-credit-card" aria-hidden="true"></i>Main card &#183; USD</div>
+                  <div class="tx-detail"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>McDonald’s</div>
+                </div>
+                <div class="tx-amt-wrap"><div class="tx-amt tabular">&minus;$4.60</div><div class="tx-time">12:32 PM</div></div>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <div class="flow-mascot">
+          <img src="assets/img/mascot-phone.svg" alt="" width="1495" height="2139" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>You choose what obleek reads.</h2>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-card-icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></div>
+          <h3>Analyzed on your device</h3>
+          <p>Anything obleek doesn’t already recognize is analyzed on the device, never on a server.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon"><i class="fa-solid fa-eye-slash" aria-hidden="true"></i></div>
+          <h3>Nothing stored, nothing sent</h3>
+          <p>Notification text is never stored and never leaves your phone.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon"><i class="fa-solid fa-toggle-off" aria-hidden="true"></i></div>
+          <h3>Off until you turn it on</h3>
+          <p>The feature stays off until you turn it on, and you choose every app it watches.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-card-icon"><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i></div>
+          <h3>Nothing saved without you</h3>
+          <p>Each detected payment waits for your confirmation before it becomes a transaction.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -182,10 +297,11 @@
   <section class="feature reverse">
     <div class="wrap">
       <div class="feature-copy">
-        <h2>See where your money goes. <span class="simple">It's that simple.</span></h2>
+        <img class="feature-mascot" src="assets/img/mascot-chart.svg" alt="" width="2166" height="2166" loading="lazy" />
+        <h2>See where your money goes.</h2>
         <p>Every transaction lands in one feed. See what came in, what went out, and where it went — by category, by month, over the last six months.</p>
         <ul class="feature-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Income, expenses, transfers and debts in one feed</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Income, expenses, transfers, and debts in one feed</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Daily activity heatmap and category breakdowns</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>6-month trends for spending and income</li>
         </ul>
@@ -249,7 +365,7 @@
 
             <div data-kind-section="expense">
               <div class="section-title">Expenses by category</div>
-              <div data-dash-category-list=""><div class="cat-row drillable" data-cat-drill="Shopping"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-bag-shopping"></i></span>Shopping</span><span class="cat-right"><span class="nums tabular"><b>$214.19</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:100%"></span></div></div><div class="cat-row drillable" data-cat-drill="Food &amp; drink"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-utensils"></i></span>Food &amp; drink</span><span class="cat-right"><span class="nums tabular"><b>$85.65</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:39.9878612446893%"></span></div></div><div class="cat-row drillable" data-cat-drill="Transport"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-bus"></i></span>Transport</span><span class="cat-right"><span class="nums tabular"><b>$67.75</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:31.63079508847285%"></span></div></div><div class="cat-row drillable" data-cat-drill="Housing"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-house"></i></span>Housing</span><span class="cat-right"><span class="nums tabular"><b>$41.30</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:19.281945935851347%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-gift"></i></span>Gifts</span><span class="cat-right"><span class="nums tabular"><b>$35.00</b></span></span></div><div class="cat-track"><span style="width:16.340632149026565%"></span></div></div><div class="cat-row drillable" data-cat-drill="Health"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-heart-pulse"></i></span>Health</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-shield"></i></span>Insurance</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row drillable" data-cat-drill="Entertainment"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-film"></i></span>Entertainment</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-spa"></i></span>Personal care</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-graduation-cap"></i></span>Education</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-suitcase-rolling"></i></span>Travel</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row drillable" data-cat-drill="Family"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-users"></i></span>Family</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-paw"></i></span>Pets</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-heart"></i></span>Donations</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-tag"></i></span>Other expense</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div></div>
+              <div data-dash-category-list=""><div class="cat-row drillable" data-cat-drill="Shopping"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-bag-shopping"></i></span>Shopping</span><span class="cat-right"><span class="nums tabular"><b>$214.19</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:100%"></span></div></div><div class="cat-row drillable" data-cat-drill="Food &amp; drink"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-utensils"></i></span>Food &amp; drink</span><span class="cat-right"><span class="nums tabular"><b>$85.65</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:39.9878612446893%"></span></div></div><div class="cat-row drillable" data-cat-drill="Transport"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-bus"></i></span>Transport</span><span class="cat-right"><span class="nums tabular"><b>$67.75</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:31.63079508847285%"></span></div></div><div class="cat-row drillable" data-cat-drill="Housing"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-house"></i></span>Housing</span><span class="cat-right"><span class="nums tabular"><b>$41.30</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:19.281945935851347%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-gift"></i></span>Gifts</span><span class="cat-right"><span class="nums tabular"><b>$35.00</b></span></span></div><div class="cat-track"><span style="width:16.340632149026565%"></span></div></div><div class="cat-row drillable" data-cat-drill="Health"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-heart-pulse"></i></span>Health</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-shield"></i></span>Insurance</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row drillable" data-cat-drill="Entertainment"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-film"></i></span>Entertainment</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-spa"></i></span>Personal care</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-graduation-cap"></i></span>Education</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-suitcase-rolling"></i></span>Travel</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row drillable" data-cat-drill="Family"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-users"></i></span>Family</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span><i class="fa-solid fa-chevron-right"></i></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-paw"></i></span>Pets</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-heart"></i></span>Donations</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div><div class="cat-row"><div class="cat-head"><span class="name"><span class="cat-icon"><i class="fa-solid fa-tag"></i></span>Other</span><span class="cat-right"><span class="nums tabular"><b>$0.00</b></span></span></div><div class="cat-track"><span style="width:0%"></span></div></div></div>
             </div>
 
             
@@ -276,160 +392,58 @@
     </div>
   </section>
 
-  <section class="feature">
-    <div class="wrap">
-      <div class="feature-copy">
-        <h2>Organize categories how you want it. <span class="simple">It's that simple.</span></h2>
-        <p>Build your own category tree, nested up to four levels deep, each with its own icon. Reorder by dragging, archive what you no longer use, and keep expense and income categories separate.</p>
-        <ul class="feature-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Nested categories, up to 4 levels deep</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Archive instead of losing your history</li>
-        </ul>
-      </div>
-      <div class="feature-visual">
-        <div class="phone-frame">
-        <div class="phone" aria-hidden="true">
-          <div class="phone-inner">
-            <div class="statusbar"><span>9:41</span><span><i class="fa-solid fa-signal"></i>&nbsp;&nbsp;<i class="fa-solid fa-wifi"></i>&nbsp;&nbsp;72%</span></div>
-            <div class="screens">
-              <section class="screen active">
-                <div class="sub-header"><span class="back-btn"><i class="fa-solid fa-chevron-left"></i></span><h2>Expense categories</h2><span class="icon-btn"><i class="fa-solid fa-plus"></i></span></div>
-<div class="cat-tree" data-cat-list="expense"><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="utensils"><i class="fa-solid fa-utensils"></i></span><span class="tree-name">Food &amp; drink</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="cart"><i class="fa-solid fa-cart-shopping"></i></span><span class="tree-name">Groceries</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="3" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="storefront"><i class="fa-solid fa-shop"></i></span><span class="tree-name">Supermarket</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="4" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="box"><i class="fa-solid fa-box"></i></span><span class="tree-name">Essentials</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><span class="tree-action-spacer"></span></div></div></div></div><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="dining"><i class="fa-solid fa-plate-wheat"></i></span><span class="tree-name">Restaurants</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="home"><i class="fa-solid fa-house"></i></span><span class="tree-name">Housing</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="bolt"><i class="fa-solid fa-bolt"></i></span><span class="tree-name">Utilities</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="hammer"><i class="fa-solid fa-hammer"></i></span><span class="tree-name">Home maintenance</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="wifi"><i class="fa-solid fa-wifi"></i></span><span class="tree-name">Internet</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="bus"><i class="fa-solid fa-bus"></i></span><span class="tree-name">Transport</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="train"><i class="fa-solid fa-train-subway"></i></span><span class="tree-name">Public transit</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="fuel"><i class="fa-solid fa-gas-pump"></i></span><span class="tree-name">Fuel</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="bag"><i class="fa-solid fa-bag-shopping"></i></span><span class="tree-name">Shopping</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="shirt"><i class="fa-solid fa-shirt"></i></span><span class="tree-name">Clothing</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="heart-pulse"><i class="fa-solid fa-heart-pulse"></i></span><span class="tree-name">Health</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="pill"><i class="fa-solid fa-pills"></i></span><span class="tree-name">Pharmacy</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="shield"><i class="fa-solid fa-shield"></i></span><span class="tree-name">Insurance</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="film"><i class="fa-solid fa-film"></i></span><span class="tree-name">Entertainment</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="tv"><i class="fa-solid fa-tv"></i></span><span class="tree-name">Subscriptions</span><div class="tree-actions"><button class="tree-action" aria-label="Edit"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="Add category"><i class="fa-solid fa-plus"></i></button></div></div></div></div>
-                <p class="depth-note">Drag <i class="fa-solid fa-grip-vertical"></i> to reorder. Categories can be nested up to 4 levels deep.</p>
-              </section>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="feature reverse">
-    <div class="wrap">
-      <div class="feature-copy">
-        <h2>Your cards, cash and debts in one app. <span class="simple">It's that simple.</span></h2>
-        <p>Cash, debit and credit cards, deposits — every account lives in one list, in its own currency, rolled up into a single total. Track what you owe and what's owed to you alongside everything else.</p>
-        <ul class="feature-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Cash, cards and deposits as accounts</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Track money you've lent or borrowed</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>One balance, broken down by currency</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Archive an account without losing its history</li>
-        </ul>
-      </div>
-      <div class="feature-visual">
-        <div class="phone-frame">
-        <div class="phone" aria-hidden="true">
-          <div class="phone-inner">
-            <div class="statusbar"><span>9:41</span><span><i class="fa-solid fa-signal"></i>&nbsp;&nbsp;<i class="fa-solid fa-wifi"></i>&nbsp;&nbsp;72%</span></div>
-            <div class="screens">
-              <section class="screen active">
-                <div class="screen-head">
-                  <button type="button" class="header-balance-btn tabular">≈ $6,518.96</button>
-                  <div class="screen-head-actions"><button class="icon-btn"><i class="fa-solid fa-chart-pie"></i></button><button class="icon-btn"><i class="fa-solid fa-plus"></i></button></div>
-                </div>
-                <div class="settings-group-label">Cards and accounts</div>
-                <div class="acct-card">
-                  <div class="acct-row"><div class="acct-icon"><i class="fa-solid fa-wallet"></i></div><div class="acct-mid"><div class="name">Cash wallet</div><div class="meta">Cash · USD</div></div><div class="acct-amt tabular">$27.65</div></div>
-                  <div class="acct-row"><div class="acct-icon"><i class="fa-solid fa-credit-card"></i></div><div class="acct-mid"><div class="name">Main card</div><div class="meta">Debit card · USD</div></div><div class="acct-amt tabular">$2,324.01</div></div>
-                  <div class="acct-row"><div class="acct-icon"><i class="fa-solid fa-credit-card"></i></div><div class="acct-mid"><div class="name">Credit card</div><div class="meta">Credit card · USD</div></div><div class="acct-amt tabular">$38.70</div></div>
-                </div>
-                <div class="settings-group-label">Savings</div>
-                <div class="acct-card">
-                  <div class="acct-row"><div class="acct-icon"><i class="fa-solid fa-vault"></i></div><div class="acct-mid"><div class="name">Savings</div><div class="meta">Deposit · EUR</div></div><div class="acct-amt tabular">€3,632.96</div></div>
-                </div>
-                <div class="settings-group-label">Debts</div>
-                <div class="acct-card debts-card">
-                  <div class="ledger-group">
-                    <div class="ledger-label">Owe me</div>
-                    <div class="ledger-line"><span class="ledger-left"><span class="acct-icon"><i class="fa-solid fa-handshake"></i></span><span class="ledger-person">Kate</span></span><span class="ledger-amt tabular">$30.00</span></div>
-                    <div class="ledger-line"><span class="ledger-left"><span class="acct-icon"><i class="fa-solid fa-handshake"></i></span><span class="ledger-person">Jordan</span></span><span class="ledger-amt tabular">$200.00</span></div>
-                  </div>
-                  <div class="ledger-group owe">
-                    <div class="ledger-label">I owe</div>
-                    <div class="ledger-line"><span class="ledger-left"><span class="acct-icon"><i class="fa-solid fa-handshake"></i></span><span class="ledger-person">Alex</span></span><span class="ledger-amt tabular">−$25.00</span></div>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <nav class="tabbar">
-              <button class="tab"><i class="fa-solid fa-list"></i><span>Transactions</span></button>
-              <button class="tab active"><i class="fa-solid fa-wallet"></i><span>Accounts</span></button>
-              <button class="tab"><i class="fa-solid fa-chart-column"></i><span>Analytics</span></button>
-              <button class="tab"><i class="fa-solid fa-gear"></i><span>Settings</span></button>
-            </nav>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   </div>
 
   <section class="highlights">
+    <svg class="band-wave" width="100%" height="30" aria-hidden="true" preserveAspectRatio="none">
+      <pattern id="band-scallop-light" width="100" height="30" patternUnits="userSpaceOnUse">
+        <path d="M 0,15 q 25,-13 50,0 q 25,13 50,0 L 100,30 L 0,30 Z" />
+      </pattern>
+      <rect width="100%" height="30" fill="url(#band-scallop-light)" />
+    </svg>
     <div class="wrap">
       <div class="section-head">
-        <h2>More features that make tracking money easier</h2>
-        <p>Recurring bills, multiple currencies, a lock screen, and transaction search.</p>
+        <h2>Other features worth knowing.</h2>
       </div>
-      <div class="feature-rows">
-        <div class="feature-row">
-          <div class="feature-row-icon"><i class="fa-solid fa-play" aria-hidden="true"></i></div>
-          <div class="feature-row-mid">
-            <h3>Try demo mode</h3>
-            <p>Explore obleek with sample accounts and transactions already filled in — nothing to set up first.</p>
+      <ul class="unique-list">
+        <li class="unique-item">
+          <span class="unique-icon" aria-hidden="true"><i class="fa-solid fa-right-left"></i></span>
+          <div>
+            <h3>Transfers between currencies</h3>
+            <p>Transfers work between accounts in different currencies: send 1,000 USD from one and receive 900 EUR in the other.</p>
           </div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row-icon"><i class="fa-solid fa-repeat" aria-hidden="true"></i></div>
-          <div class="feature-row-mid">
-            <h3>Recurring transactions</h3>
-            <p>Set up a bill or paycheck once — daily, weekly, monthly or yearly — and edit or skip a single occurrence without breaking the series.</p>
+        </li>
+        <li class="unique-item">
+          <span class="unique-icon" aria-hidden="true"><i class="fa-solid fa-sitemap"></i></span>
+          <div>
+            <h3>Categories four levels deep</h3>
+            <p>Nest subcategories, give each one an icon, and drag them into the order you think in.</p>
           </div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row-icon"><i class="fa-solid fa-coins" aria-hidden="true"></i></div>
-          <div class="feature-row-mid">
-            <h3>Multi-currency</h3>
-            <p>Every account keeps its own currency, converted into one total balance using current exchange rates.</p>
+        </li>
+        <li class="unique-item">
+          <span class="unique-icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></span>
+          <div>
+            <h3>Debts per person, per currency</h3>
+            <p>Log what you lent and what you borrowed. Every person has a running balance in each currency and the full history behind it.</p>
           </div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
-          <div class="feature-row-mid">
-            <h3>PIN &amp; fingerprint lock</h3>
-            <p>Lock the app with a PIN or your fingerprint. Nothing opens without it.</p>
-          </div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row-icon"><i class="fa-solid fa-download" aria-hidden="true"></i></div>
-          <div class="feature-row-mid">
-            <h3>Import &amp; export</h3>
-            <p>Your data, in plain JSON, whenever you want it.</p>
-          </div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row-icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></div>
-          <div class="feature-row-mid">
-            <h3>Search</h3>
-            <p>Find any transaction in seconds — by category, account, place, person or note.</p>
-          </div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row-icon"><i class="fa-solid fa-hashtag" aria-hidden="true"></i></div>
-          <div class="feature-row-mid">
-            <h3>Tags, places &amp; people</h3>
-            <p>Attach tags, a place, or a person to any transaction — so “who” and “where” are as easy to find as “how much.”</p>
-          </div>
-        </div>
-      </div>
+        </li>
+      </ul>
+      <p class="unique-rest">Everything else works like a regular expense tracker: recurring payments, search, tags, export, a PIN lock, and nine languages.</p>
     </div>
   </section>
 
   <section class="final-cta">
+    <svg class="band-wave" width="100%" height="30" aria-hidden="true" preserveAspectRatio="none">
+      <pattern id="band-scallop-dark" width="100" height="30" patternUnits="userSpaceOnUse">
+        <path d="M 0,15 q 25,-13 50,0 q 25,13 50,0 L 100,30 L 0,30 Z" />
+      </pattern>
+      <rect width="100%" height="30" fill="url(#band-scallop-dark)" />
+    </svg>
     <div class="wrap">
-      <h2>Try obleek today. <span class="simple">It's that simple.</span></h2>
+      <img class="cta-mascot" src="assets/img/mascot-app.svg" alt="" width="1883" height="1834" loading="lazy" />
+      <h2>Try obleek today.</h2>
       <p>Explore with sample data first, or start tracking right away.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek" rel="noopener">
@@ -443,7 +457,17 @@
 </main>
 
 <footer class="site-footer">
+  <svg class="band-wave" width="100%" height="30" aria-hidden="true" preserveAspectRatio="none">
+    <pattern id="band-scallop-foot" width="100" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 0,15 q 25,-13 50,0 q 25,13 50,0 L 100,30 L 0,30 Z" />
+    </pattern>
+    <rect width="100%" height="30" fill="url(#band-scallop-foot)" />
+  </svg>
   <div class="wrap">
+    <ul class="social-links">
+      <li><a href="https://www.instagram.com/obleek.app/" rel="me noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.threads.com/@obleek.app" rel="me noopener" aria-label="Threads"><i class="fa-brands fa-threads" aria-hidden="true"></i></a></li>
+    </ul>
     <p>© 2026 obleek</p>
   </div>
 </footer>

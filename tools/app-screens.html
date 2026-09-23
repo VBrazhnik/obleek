@@ -1,100 +1,17 @@
-<!DOCTYPE html>
-<html lang="{{lang}}">
-<head>
-<meta charset="UTF-8" />
-<title>{{meta_title}}</title>
-<meta name="description" content="{{meta_description}}" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#121212" />
-<link rel="canonical" href="{{canonical_url}}" />
+<!--
+  Archived phone mockups from template.html.
 
-{{hreflang_links}}
+  These are the live HTML/CSS reproductions of the app screens, with their
+  {{placeholders}} intact, so any of them can be pasted straight back into
+  template.html inside a .feature-visual and will localise as before.
 
-<link rel="icon" type="image/svg+xml" href="{{asset_base}}assets/img/icon-source.svg" />
-<link rel="icon" type="image/png" sizes="32x32" href="{{asset_base}}assets/img/favicon-32.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{asset_base}}assets/img/apple-touch-icon.png" />
+  The category-tree and accounts screens were taken off the page on
+  2026-09-23; the other two are still live and are kept here only as a
+  reference copy.
+-->
 
-<link rel="preload" href="{{asset_base}}assets/fonts/rubik.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-<link rel="stylesheet" href="{{asset_base}}assets/css/style.css" />
-<link rel="stylesheet" href="{{asset_base}}assets/css/app-mock.css" />
 
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="obleek" />
-<meta property="og:title" content="{{meta_title}}" />
-<meta property="og:description" content="{{og_description}}" />
-<meta property="og:url" content="{{canonical_url}}" />
-<meta property="og:image" content="https://vbrazhnik.github.io/obleek/assets/img/og-image.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:locale" content="{{og_locale}}" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{meta_title}}" />
-<meta name="twitter:description" content="{{twitter_description}}" />
-<meta name="twitter:image" content="https://vbrazhnik.github.io/obleek/assets/img/og-image.png" />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "obleek",
-  "applicationCategory": "FinanceApplication",
-  "operatingSystem": "Android",
-  "description": "{{jsonld_description}}",
-  "url": "{{canonical_url}}",
-  "installUrl": "https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek"
-}
-</script>
-</head>
-<body>
-<a class="skip-link" href="#main">{{skip_link}}</a>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="#top">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 512 512"><g transform="translate(256 256) scale(1.4) translate(-256 -256)" fill="currentColor"><path d="M256 114C351.545 114 429 214.792 429 293.477C429 372.161 351.545 398.941 256 398.941C160.455 398.941 83.0002 372.161 83 293.477C83 214.792 160.455 114 256 114ZM193.09 215.765C171.12 215.765 153.309 238.545 153.309 266.646C153.309 294.748 171.12 317.529 193.09 317.529C215.06 317.529 232.87 294.748 232.87 266.646C232.87 238.545 215.06 215.765 193.09 215.765ZM320.758 215.765C298.788 215.765 280.978 238.545 280.978 266.646C280.978 294.748 298.788 317.529 320.758 317.529C342.728 317.529 360.539 294.748 360.539 266.646C360.539 238.545 342.728 215.765 320.758 215.765Z"/></g></svg>
-      </span>
-      obleek
-    </a>
-    <nav class="site-nav" aria-label="Primary">
-      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek" rel="noopener">
-        <i class="fa-brands fa-google-play" aria-hidden="true"></i>
-        {{google_play_btn}}
-      </a>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
-
-  <section class="hero" id="top">
-    <div class="wrap">
-      <div class="hero-copy">
-        <img class="hero-mascot" src="{{asset_base}}assets/img/mascot-coin.svg" alt="" width="1446" height="2221" />
-        <h1>{{hero_h1}}</h1>
-        <p class="lede">{{hero_lede}}</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek" rel="noopener">
-            <i class="fa-brands fa-google-play" aria-hidden="true"></i>
-            {{google_play_btn}}
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="hero-stage">
-        <div class="hero-phone">
-        <div class="notif hero-notif">
-          <div class="notif-head">
-            <span class="notif-icon" aria-hidden="true"><svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 114C351.545 114 429 214.792 429 293.477C429 372.161 351.545 398.941 256 398.941C160.455 398.941 83.0002 372.161 83 293.477C83 214.792 160.455 114 256 114ZM193.09 215.765C171.12 215.765 153.309 238.545 153.309 266.646C153.309 294.748 171.12 317.529 193.09 317.529C215.06 317.529 232.87 294.748 232.87 266.646C232.87 238.545 215.06 215.765 193.09 215.765ZM320.758 215.765C298.788 215.765 280.978 238.545 280.978 266.646C280.978 294.748 298.788 317.529 320.758 317.529C342.728 317.529 360.539 294.748 360.539 266.646C360.539 238.545 342.728 215.765 320.758 215.765Z"/></svg></span>
-            <span class="notif-app">obleek</span>
-            <span class="notif-sep" aria-hidden="true">&#183;</span>
-            <span class="notif-time">{{notif_now}}</span>
-          </div>
-          <p class="notif-title">{{notif_obleek_title}}</p>
-          <p class="notif-body">{{notif_obleek_body}}</p>
-        </div>
+<!-- ======== hero_h1 (transactions feed) ======== -->
         <div class="phone-frame">
         <div class="phone" aria-hidden="true">
           <div class="phone-inner">
@@ -176,128 +93,8 @@
             <button class="fab" aria-hidden="true"><i class="fa-solid fa-plus"></i></button>
           </div>
         </div>
-        </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="flow" id="detection">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>{{flow_h2}}</h2>
-        <p>{{flow_p}}</p>
-      </div>
-      <p class="flow-note"><i class="fa-solid fa-building-columns" aria-hidden="true"></i>{{flow_note}}</p>
-
-      <div class="flow-grid">
-        <ol class="flow-steps">
-          <li class="flow-step">
-            <div class="flow-step-head">
-              <span class="flow-step-num" aria-hidden="true">1</span>
-              <span class="flow-step-label">{{flow_step1}}</span>
-            </div>
-            <div class="notif">
-              <div class="notif-head">
-                <span class="notif-icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></span>
-                <span class="notif-app">{{notif_bank_app}}</span>
-                <span class="notif-sep" aria-hidden="true">&#183;</span>
-                <span class="notif-time">{{notif_now}}</span>
-              </div>
-              <p class="notif-title">{{notif_bank_merchant}}</p>
-              <p class="notif-body tabular">{{notif_bank_body}}</p>
-            </div>
-          </li>
-
-          <li class="flow-step">
-            <div class="flow-step-head">
-              <span class="flow-step-num" aria-hidden="true">2</span>
-              <span class="flow-step-label">{{flow_step2}}</span>
-            </div>
-            <div class="notif">
-              <div class="notif-head">
-                <span class="notif-icon" aria-hidden="true"><svg viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 114C351.545 114 429 214.792 429 293.477C429 372.161 351.545 398.941 256 398.941C160.455 398.941 83.0002 372.161 83 293.477C83 214.792 160.455 114 256 114ZM193.09 215.765C171.12 215.765 153.309 238.545 153.309 266.646C153.309 294.748 171.12 317.529 193.09 317.529C215.06 317.529 232.87 294.748 232.87 266.646C232.87 238.545 215.06 215.765 193.09 215.765ZM320.758 215.765C298.788 215.765 280.978 238.545 280.978 266.646C280.978 294.748 298.788 317.529 320.758 317.529C342.728 317.529 360.539 294.748 360.539 266.646C360.539 238.545 342.728 215.765 320.758 215.765Z"/></svg></span>
-                <span class="notif-app">obleek</span>
-                <span class="notif-sep" aria-hidden="true">&#183;</span>
-                <span class="notif-time">{{notif_now}}</span>
-              </div>
-              <p class="notif-title">{{notif_obleek_title}}</p>
-              <p class="notif-body">{{notif_obleek_body}}</p>
-            </div>
-          </li>
-
-          <li class="flow-step">
-            <div class="flow-step-head">
-              <span class="flow-step-num" aria-hidden="true">3</span>
-              <span class="flow-step-label">{{flow_step3}}</span>
-            </div>
-            <div class="tx-card">
-              <div class="tx-row">
-                <span class="tx-icon" aria-hidden="true"><i class="fa-solid fa-utensils"></i></span>
-                <div class="tx-mid">
-                  <div class="name">{{cat_food_drink}}</div>
-                  <div class="tx-detail"><i class="fa-solid fa-credit-card" aria-hidden="true"></i>{{acct_main_card}} &#183; USD</div>
-                  <div class="tx-detail"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{notif_bank_merchant}}</div>
-                </div>
-                <div class="tx-amt-wrap"><div class="tx-amt tabular">&minus;$4.60</div><div class="tx-time">{{time_1232}}</div></div>
-              </div>
-            </div>
-          </li>
-        </ol>
-
-        <div class="flow-mascot">
-          <img src="{{asset_base}}assets/img/mascot-phone.svg" alt="" width="1495" height="2139" loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="trust">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>{{privacy_h2}}</h2>
-      </div>
-      <div class="trust-grid">
-        <div class="trust-card">
-          <div class="trust-card-icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></div>
-          <h3>{{trust1_h3}}</h3>
-          <p>{{trust1_p}}</p>
-        </div>
-        <div class="trust-card">
-          <div class="trust-card-icon"><i class="fa-solid fa-eye-slash" aria-hidden="true"></i></div>
-          <h3>{{trust2_h3}}</h3>
-          <p>{{trust2_p}}</p>
-        </div>
-        <div class="trust-card">
-          <div class="trust-card-icon"><i class="fa-solid fa-toggle-off" aria-hidden="true"></i></div>
-          <h3>{{trust3_h3}}</h3>
-          <p>{{trust3_p}}</p>
-        </div>
-        <div class="trust-card">
-          <div class="trust-card-icon"><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i></div>
-          <h3>{{trust4_h3}}</h3>
-          <p>{{trust4_p}}</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="features">
-
-  <section class="feature reverse">
-    <div class="wrap">
-      <div class="feature-copy">
-        <img class="feature-mascot" src="{{asset_base}}assets/img/mascot-chart.svg" alt="" width="2166" height="2166" loading="lazy" />
-        <h2>{{feature1_h2}}</h2>
-        <p>{{feature1_p}}</p>
-        <ul class="feature-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>{{feature1_li1}}</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>{{feature1_li2}}</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>{{feature1_li3}}</li>
-        </ul>
-      </div>
-      <div class="feature-visual">
+<!-- ======== feature1_h2 (analytics) ======== -->
         <div class="phone-frame">
         <div class="phone" aria-hidden="true">
           <div class="phone-inner">
@@ -378,104 +175,62 @@
             </nav>
           </div>
         </div>
+
+<!-- ======== feature2_h2 (category tree) ======== -->
+        <div class="phone-frame">
+        <div class="phone" aria-hidden="true">
+          <div class="phone-inner">
+            <div class="statusbar"><span>9:41</span><span><i class="fa-solid fa-signal"></i>&nbsp;&nbsp;<i class="fa-solid fa-wifi"></i>&nbsp;&nbsp;72%</span></div>
+            <div class="screens">
+              <section class="screen active">
+                <div class="sub-header"><span class="back-btn"><i class="fa-solid fa-chevron-left"></i></span><h2>{{app_expense_categories}}</h2><span class="icon-btn"><i class="fa-solid fa-plus"></i></span></div>
+<div class="cat-tree" data-cat-list="expense"><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="utensils"><i class="fa-solid fa-utensils"></i></span><span class="tree-name">{{cat_food_drink}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="cart"><i class="fa-solid fa-cart-shopping"></i></span><span class="tree-name">{{cat_groceries}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="3" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="storefront"><i class="fa-solid fa-shop"></i></span><span class="tree-name">{{cat_supermarket}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="4" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="box"><i class="fa-solid fa-box"></i></span><span class="tree-name">{{cat_essentials}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><span class="tree-action-spacer"></span></div></div></div></div><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="dining"><i class="fa-solid fa-plate-wheat"></i></span><span class="tree-name">{{cat_restaurants}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="home"><i class="fa-solid fa-house"></i></span><span class="tree-name">{{cat_housing}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="bolt"><i class="fa-solid fa-bolt"></i></span><span class="tree-name">{{cat_utilities}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="hammer"><i class="fa-solid fa-hammer"></i></span><span class="tree-name">{{cat_home_maintenance}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="wifi"><i class="fa-solid fa-wifi"></i></span><span class="tree-name">{{cat_internet}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="bus"><i class="fa-solid fa-bus"></i></span><span class="tree-name">{{cat_transport}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="train"><i class="fa-solid fa-train-subway"></i></span><span class="tree-name">{{cat_public_transit}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="fuel"><i class="fa-solid fa-gas-pump"></i></span><span class="tree-name">{{cat_fuel}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="bag"><i class="fa-solid fa-bag-shopping"></i></span><span class="tree-name">{{cat_shopping}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="shirt"><i class="fa-solid fa-shirt"></i></span><span class="tree-name">{{cat_clothing}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="heart-pulse"><i class="fa-solid fa-heart-pulse"></i></span><span class="tree-name">{{cat_health}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="pill"><i class="fa-solid fa-pills"></i></span><span class="tree-name">{{cat_pharmacy}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="shield"><i class="fa-solid fa-shield"></i></span><span class="tree-name">{{cat_insurance}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-tree-row" data-depth="1" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><button class="tree-chevron" data-toggle=""><i class="fa-solid fa-chevron-down"></i></button><span class="tree-icon" data-icon="film"><i class="fa-solid fa-film"></i></span><span class="tree-name">{{cat_entertainment}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div><div class="cat-children"><div class="cat-tree-row" data-depth="2" data-archived="false"><span class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></span><span class="tree-spacer"></span><span class="tree-icon" data-icon="tv"><i class="fa-solid fa-tv"></i></span><span class="tree-name">{{cat_subscriptions}}</span><div class="tree-actions"><button class="tree-action" aria-label="{{app_edit}}"><i class="fa-solid fa-pen"></i></button><button class="tree-action" aria-label="{{app_add_category}}"><i class="fa-solid fa-plus"></i></button></div></div></div></div>
+                <p class="depth-note"><i class="fa-solid fa-grip-vertical"></i> {{app_depth_note}}</p>
+              </section>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-
-
-  </div>
-
-  <section class="highlights">
-    <svg class="band-wave" width="100%" height="30" aria-hidden="true" preserveAspectRatio="none">
-      <pattern id="band-scallop-light" width="100" height="30" patternUnits="userSpaceOnUse">
-        <path d="M 0,15 q 25,-13 50,0 q 25,13 50,0 L 100,30 L 0,30 Z" />
-      </pattern>
-      <rect width="100%" height="30" fill="url(#band-scallop-light)" />
-    </svg>
-    <div class="wrap">
-      <div class="section-head">
-        <h2>{{unique_h2}}</h2>
-      </div>
-      <ul class="unique-list">
-        <li class="unique-item">
-          <span class="unique-icon" aria-hidden="true"><i class="fa-solid fa-right-left"></i></span>
-          <div>
-            <h3>{{unique1_h3}}</h3>
-            <p>{{unique1_p}}</p>
+<!-- ======== feature3_h2 (accounts and debts) ======== -->
+        <div class="phone-frame">
+        <div class="phone" aria-hidden="true">
+          <div class="phone-inner">
+            <div class="statusbar"><span>9:41</span><span><i class="fa-solid fa-signal"></i>&nbsp;&nbsp;<i class="fa-solid fa-wifi"></i>&nbsp;&nbsp;72%</span></div>
+            <div class="screens">
+              <section class="screen active">
+                <div class="screen-head">
+                  <button type="button" class="header-balance-btn tabular">≈ $6,518.96</button>
+                  <div class="screen-head-actions"><button class="icon-btn"><i class="fa-solid fa-chart-pie"></i></button><button class="icon-btn"><i class="fa-solid fa-plus"></i></button></div>
+                </div>
+                <div class="settings-group-label">{{app_group_cards}}</div>
+                <div class="acct-card">
+                  <div class="acct-row"><div class="acct-icon"><i class="fa-solid fa-wallet"></i></div><div class="acct-mid"><div class="name">{{acct_cash}}</div><div class="meta">{{acct_type_cash}} · USD</div></div><div class="acct-amt tabular">$27.65</div></div>
+                  <div class="acct-row"><div class="acct-icon"><i class="fa-solid fa-credit-card"></i></div><div class="acct-mid"><div class="name">{{acct_main_card}}</div><div class="meta">{{acct_type_debit}} · USD</div></div><div class="acct-amt tabular">$2,324.01</div></div>
+                  <div class="acct-row"><div class="acct-icon"><i class="fa-solid fa-credit-card"></i></div><div class="acct-mid"><div class="name">{{acct_credit_card}}</div><div class="meta">{{acct_type_credit}} · USD</div></div><div class="acct-amt tabular">$38.70</div></div>
+                </div>
+                <div class="settings-group-label">{{app_group_savings}}</div>
+                <div class="acct-card">
+                  <div class="acct-row"><div class="acct-icon"><i class="fa-solid fa-vault"></i></div><div class="acct-mid"><div class="name">{{acct_savings}}</div><div class="meta">{{acct_type_deposit}} · EUR</div></div><div class="acct-amt tabular">€3,632.96</div></div>
+                </div>
+                <div class="settings-group-label">{{app_group_debts}}</div>
+                <div class="acct-card debts-card">
+                  <div class="ledger-group">
+                    <div class="ledger-label">{{app_owe_me}}</div>
+                    <div class="ledger-line"><span class="ledger-left"><span class="acct-icon"><i class="fa-solid fa-handshake"></i></span><span class="ledger-person">{{person_kate}}</span></span><span class="ledger-amt tabular">$30.00</span></div>
+                    <div class="ledger-line"><span class="ledger-left"><span class="acct-icon"><i class="fa-solid fa-handshake"></i></span><span class="ledger-person">{{person_jordan}}</span></span><span class="ledger-amt tabular">$200.00</span></div>
+                  </div>
+                  <div class="ledger-group owe">
+                    <div class="ledger-label">{{app_i_owe}}</div>
+                    <div class="ledger-line"><span class="ledger-left"><span class="acct-icon"><i class="fa-solid fa-handshake"></i></span><span class="ledger-person">{{person_alex}}</span></span><span class="ledger-amt tabular">−$25.00</span></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <nav class="tabbar">
+              <button class="tab"><i class="fa-solid fa-list"></i><span>{{tab_transactions}}</span></button>
+              <button class="tab active"><i class="fa-solid fa-wallet"></i><span>{{tab_accounts}}</span></button>
+              <button class="tab"><i class="fa-solid fa-chart-column"></i><span>{{tab_analytics}}</span></button>
+              <button class="tab"><i class="fa-solid fa-gear"></i><span>{{tab_settings}}</span></button>
+            </nav>
           </div>
-        </li>
-        <li class="unique-item">
-          <span class="unique-icon" aria-hidden="true"><i class="fa-solid fa-sitemap"></i></span>
-          <div>
-            <h3>{{unique2_h3}}</h3>
-            <p>{{unique2_p}}</p>
-          </div>
-        </li>
-        <li class="unique-item">
-          <span class="unique-icon" aria-hidden="true"><i class="fa-solid fa-handshake"></i></span>
-          <div>
-            <h3>{{unique3_h3}}</h3>
-            <p>{{unique3_p}}</p>
-          </div>
-        </li>
-      </ul>
-      <p class="unique-rest">{{unique_rest}}</p>
-    </div>
-  </section>
-
-  <section class="final-cta">
-    <svg class="band-wave" width="100%" height="30" aria-hidden="true" preserveAspectRatio="none">
-      <pattern id="band-scallop-dark" width="100" height="30" patternUnits="userSpaceOnUse">
-        <path d="M 0,15 q 25,-13 50,0 q 25,13 50,0 L 100,30 L 0,30 Z" />
-      </pattern>
-      <rect width="100%" height="30" fill="url(#band-scallop-dark)" />
-    </svg>
-    <div class="wrap">
-      <img class="cta-mascot" src="{{asset_base}}assets/img/mascot-app.svg" alt="" width="1883" height="1834" loading="lazy" />
-      <h2>{{cta_h2}}</h2>
-      <p>{{cta_p}}</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek" rel="noopener">
-          <i class="fa-brands fa-google-play" aria-hidden="true"></i>
-          {{google_play_btn}}
-        </a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <svg class="band-wave" width="100%" height="30" aria-hidden="true" preserveAspectRatio="none">
-    <pattern id="band-scallop-foot" width="100" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 0,15 q 25,-13 50,0 q 25,13 50,0 L 100,30 L 0,30 Z" />
-    </pattern>
-    <rect width="100%" height="30" fill="url(#band-scallop-foot)" />
-  </svg>
-  <div class="wrap">
-    <ul class="social-links">
-      <li><a href="https://www.instagram.com/obleek.app/" rel="me noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-      <li><a href="https://www.threads.com/@obleek.app" rel="me noopener" aria-label="Threads"><i class="fa-brands fa-threads" aria-hidden="true"></i></a></li>
-    </ul>
-    <p>© 2026 obleek</p>
-  </div>
-</footer>
-
-<script>
-  (function () {
-    var PHONE_WIDTH = 375;
-    function scalePhones() {
-      document.querySelectorAll(".phone-frame").forEach(function (frame) {
-        var phone = frame.querySelector(".phone");
-        if (!phone) return;
-        phone.style.zoom = frame.clientWidth / PHONE_WIDTH;
-      });
-    }
-    scalePhones();
-    window.addEventListener("resize", scalePhones);
-  })();
-</script>
-</body>
-</html>
+        </div>
