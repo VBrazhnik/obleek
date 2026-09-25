@@ -58,9 +58,17 @@
       obleek
     </a>
     <nav class="site-nav" aria-label="Primary">
+      <details class="lang-switch">
+        <summary class="lang-switch-btn" aria-label="{{lang_switch_label}}">
+          <span>{{lang_code_upper}}</span>
+        </summary>
+        <ul class="lang-switch-menu">
+{{lang_switch_links}}
+        </ul>
+      </details>
       <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek" rel="noopener">
         <i class="fa-brands fa-google-play" aria-hidden="true"></i>
-        {{google_play_btn}}
+        <span class="btn-label">{{google_play_btn}}</span>
       </a>
     </nav>
   </div>
@@ -475,6 +483,16 @@
     }
     scalePhones();
     window.addEventListener("resize", scalePhones);
+  })();
+
+  (function () {
+    var langSwitch = document.querySelector(".lang-switch");
+    if (!langSwitch) return;
+    document.addEventListener("click", function (event) {
+      if (langSwitch.open && !langSwitch.contains(event.target)) {
+        langSwitch.open = false;
+      }
+    });
   })();
 </script>
 </body>

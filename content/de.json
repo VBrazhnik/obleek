@@ -9,6 +9,7 @@
   "jsonld_description": "obleek verwandelt die Zahlungsbenachrichtigungen deiner Bank in Transaktionen: bestätigen statt alles einzutippen. Ausgaben, Einnahmen, Transfers, Schulden — dein ganzes Budget in einer App. Die Liste gruppiert die Buchungen nach Tagen, und im Verlauf jedes Kontos siehst du den Saldo nach jeder einzelnen.",
   "skip_link": "Zum Inhalt springen",
   "google_play_btn": "Jetzt bei Google Play",
+  "lang_switch_label": "Sprache",
   "hero_h1": "Ausgaben erfassen, ohne zu tippen.",
   "hero_lede": "obleek verwandelt die Zahlungsbenachrichtigungen deiner Bank in Transaktionen: bestätigen statt alles einzutippen.",
   "tab_transactions": "Transaktionen",

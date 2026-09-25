@@ -9,6 +9,7 @@
   "jsonld_description": "obleek transforme les notifications de paiement de votre banque en transactions : vous confirmez au lieu de tout saisir. Dépenses, revenus, virements, dettes : tout votre budget dans une seule application. La liste regroupe les opérations par jour, et l’historique de chaque compte affiche le solde après chacune d’elles.",
   "skip_link": "Passer au contenu",
   "google_play_btn": "Disponible sur Google Play",
+  "lang_switch_label": "Langue",
   "hero_h1": "Suivez vos dépenses sans rien saisir.",
   "hero_lede": "obleek transforme les notifications de paiement de votre banque en transactions : vous confirmez au lieu de tout saisir.",
   "tab_transactions": "Transactions",

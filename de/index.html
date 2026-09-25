@@ -67,9 +67,25 @@
       obleek
     </a>
     <nav class="site-nav" aria-label="Primary">
+      <details class="lang-switch">
+        <summary class="lang-switch-btn" aria-label="Sprache">
+          <span>DE</span>
+        </summary>
+        <ul class="lang-switch-menu">
+          <li><a href="../">English</a></li>
+          <li><a href="../cs/">Čeština</a></li>
+          <li><a href="../de/" aria-current="true">Deutsch</a></li>
+          <li><a href="../es/">Español</a></li>
+          <li><a href="../fr/">Français</a></li>
+          <li><a href="../it/">Italiano</a></li>
+          <li><a href="../pl/">Polski</a></li>
+          <li><a href="../pt/">Português</a></li>
+          <li><a href="../uk/">Українська</a></li>
+        </ul>
+      </details>
       <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek" rel="noopener">
         <i class="fa-brands fa-google-play" aria-hidden="true"></i>
-        Jetzt bei Google Play
+        <span class="btn-label">Jetzt bei Google Play</span>
       </a>
     </nav>
   </div>
@@ -484,6 +500,16 @@
     }
     scalePhones();
     window.addEventListener("resize", scalePhones);
+  })();
+
+  (function () {
+    var langSwitch = document.querySelector(".lang-switch");
+    if (!langSwitch) return;
+    document.addEventListener("click", function (event) {
+      if (langSwitch.open && !langSwitch.contains(event.target)) {
+        langSwitch.open = false;
+      }
+    });
   })();
 </script>
 </body>

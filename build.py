@@ -19,6 +19,18 @@ LANGUAGES = {
     "uk": {"out": "uk/index.html", "url": "https://vbrazhnik.github.io/obleek/uk/", "og_locale": "uk_UA", "asset_base": "../"},
 }
 
+AUTONYMS = {
+    "en": "English",
+    "cs": "Čeština",
+    "de": "Deutsch",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "pl": "Polski",
+    "pt": "Português",
+    "uk": "Українська",
+}
+
 
 def hreflang_block():
     lines = []
@@ -28,14 +40,25 @@ def hreflang_block():
     return "\n".join(lines)
 
 
+def lang_switch_block(current_lang, current_cfg):
+    lines = []
+    for lang, name in AUTONYMS.items():
+        href = current_cfg["asset_base"] + (f"{lang}/" if lang != "en" else "") or "./"
+        current = ' aria-current="true"' if lang == current_lang else ""
+        lines.append(f'          <li><a href="{href}"{current}>{name}</a></li>')
+    return "\n".join(lines)
+
+
 def build(lang, cfg):
     strings = json.loads((CONTENT_DIR / f"{lang}.json").read_text(encoding="utf-8"))
     strings.setdefault("canonical_url", cfg["url"])
     strings.setdefault("og_locale", cfg["og_locale"])
     strings.setdefault("asset_base", cfg["asset_base"])
+    strings.setdefault("lang_code_upper", lang.upper())
 
     html = TEMPLATE.read_text(encoding="utf-8")
     html = html.replace("{{hreflang_links}}", hreflang_block())
+    html = html.replace("{{lang_switch_links}}", lang_switch_block(lang, cfg))
 
     def sub(match):
         key = match.group(1)

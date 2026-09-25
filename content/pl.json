@@ -9,6 +9,7 @@
   "jsonld_description": "obleek zamienia powiadomienia z banku w transakcje: potwierdzasz je, zamiast wpisywać ręcznie. Wydatki, przychody, przelewy, długi — cały Twój budżet w jednej aplikacji. Lista grupuje operacje według dni, a w historii każdego konta widać saldo po każdej z nich.",
   "skip_link": "Przejdź do treści",
   "google_play_btn": "Dostępne w Google Play",
+  "lang_switch_label": "Język",
   "hero_h1": "Śledź wydatki bez wpisywania.",
   "hero_lede": "obleek zamienia powiadomienia z banku w transakcje: potwierdzasz je, zamiast wpisywać ręcznie.",
   "tab_transactions": "Transakcje",

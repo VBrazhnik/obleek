@@ -9,6 +9,7 @@
   "jsonld_description": "A obleek transforma as notificações de pagamento do seu banco em transações: confirma em vez de escrever tudo. Despesas, receitas, transferências, dívidas: todo o seu orçamento numa só aplicação. A lista agrupa os movimentos por dia e o histórico de cada conta mostra o saldo depois de cada um deles.",
   "skip_link": "Saltar para o conteúdo",
   "google_play_btn": "Disponível no Google Play",
+  "lang_switch_label": "Idioma",
   "hero_h1": "Controle as despesas sem escrever.",
   "hero_lede": "A obleek transforma as notificações de pagamento do seu banco em transações: confirma em vez de escrever tudo.",
   "tab_transactions": "Transações",

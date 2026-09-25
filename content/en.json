@@ -9,6 +9,7 @@
   "jsonld_description": "obleek turns your bank’s payment notifications into transactions: tap to confirm, instead of typing. Expenses, income, transfers, debts — your whole budget in one app. The feed groups entries by day, and each account’s ledger shows the running balance after every entry.",
   "skip_link": "Skip to content",
   "google_play_btn": "Get it on Google Play",
+  "lang_switch_label": "Language",
   "hero_h1": "Track expenses without typing.",
   "hero_lede": "obleek turns your bank’s payment notifications into transactions: tap to confirm, instead of typing.",
   "tab_transactions": "Transactions",

@@ -121,6 +121,10 @@ a { color: inherit; }
   .site-header .btn-primary i { width: 14px; height: 14px; font-size: 14px; }
   .site-header .wrap { gap: 10px; padding-top: 12px; padding-bottom: 12px; }
 }
+@media (max-width: 380px) {
+  .site-header .btn-primary { padding: 11px; width: 44px; justify-content: center; }
+  .site-header .btn-label { display: none; }
+}
 
 .site-nav {
   display: flex;
@@ -149,6 +153,67 @@ a { color: inherit; }
 .btn-primary:hover { background: #fff; }
 .btn-primary svg,
 .btn-primary i { width: 18px; height: 18px; font-size: 18px; flex: 0 0 auto; }
+
+.lang-switch {
+  position: relative;
+  margin-right: 12px;
+}
+.lang-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44.5px;
+  height: 44.5px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.lang-switch-btn::-webkit-details-marker,
+.lang-switch-btn::marker { display: none; content: ""; }
+.lang-switch-btn:hover,
+.lang-switch[open] .lang-switch-btn {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+  color: var(--paper);
+}
+.lang-switch-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-row);
+  padding: 6px;
+  margin: 0;
+  list-style: none;
+  min-width: 168px;
+  box-shadow: var(--shadow);
+  z-index: 30;
+}
+.lang-switch-menu li { margin: 0; }
+.lang-switch-menu a {
+  display: block;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 14px;
+}
+.lang-switch-menu a[aria-current="true"] {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+.lang-switch-menu a:hover { color: var(--accent-strong); }
+@media (max-width: 480px) {
+  .lang-switch { margin-right: 6px; }
+  .lang-switch-btn { width: 44px; height: 44px; font-size: 12.5px; }
+}
 
 .hero {
   padding: 72px 0 56px;

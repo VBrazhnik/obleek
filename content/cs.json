@@ -9,6 +9,7 @@
   "jsonld_description": "obleek promění bankovní oznámení v transakce: jen je potvrdíte místo ručního zadávání. Výdaje, příjmy, převody, dluhy — celý váš rozpočet v jedné aplikaci. Seznam řadí pohyby po dnech a v historii každého účtu vidíte zůstatek po každém z nich.",
   "skip_link": "Přeskočit na obsah",
   "google_play_btn": "Nyní na Google Play",
+  "lang_switch_label": "Jazyk",
   "hero_h1": "Sledujte výdaje bez psaní.",
   "hero_lede": "obleek promění bankovní oznámení v transakce: jen je potvrdíte místo ručního zadávání.",
   "tab_transactions": "Transakce",
