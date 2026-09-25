@@ -55,6 +55,8 @@ def build(lang, cfg):
     strings.setdefault("og_locale", cfg["og_locale"])
     strings.setdefault("asset_base", cfg["asset_base"])
     strings.setdefault("lang_code_upper", lang.upper())
+    play_hl = cfg["og_locale"].replace("_", "-")
+    strings.setdefault("google_play_url", f"https://play.google.com/store/apps/details?id=com.vbrazhnik.obleek&amp;hl={play_hl}")
 
     html = TEMPLATE.read_text(encoding="utf-8")
     html = html.replace("{{hreflang_links}}", hreflang_block())
